@@ -7,7 +7,7 @@ const app = express();
 
 // Servir solo los archivos estáticos de la aplicación del directorio dist . use ( express . static ( './dist/angular-app-heroku' ) ) ;
 
-app.use(express.static('./dist/angular-app-heroku'));
+app.use(express.static('./dist/w_publicidad'));
 
 app.get('/*', (req, res) =>
     res.sendFile('index.html', {root: 'dist/w_publicidad/'}),
